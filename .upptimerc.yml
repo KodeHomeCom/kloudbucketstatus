@@ -14,41 +14,41 @@ sites:
     url: https://kloudbucket.com/user/dashboard
 
 status-website:
-  # Your custom domain
   cname: status.kloudbucket.com
   
-  # Logo and Favicon (Using Raw Github Links)
+  # --- LOGO & FAVICON ---
+  # Using the master branch link so it stays permanent
   logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/KloudBucket%20400x60.png
-  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/e5919b225d8792ae4ddb1ffe1786f1f0348978fa/assets/kloudbucket-favicon.svg
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kloudbucket-favicon.svg
   
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
   
-  # --- BRANDING & LOGO SIZE CONTROL ---
+  # --- ADVANCED CSS FIX ---
   customCSS: |
-    /* Adjust Logo Height to match your website */
-    header img { 
-      height: 45px !important; 
-      width: 120px !important; 
-      max-width: 100%;
+    /* Force Logo Height */
+    .navbar-brand img, 
+    header img, 
+    a[href="/"] img {
+      height: 30px !important; 
+      width: auto !important;
+      max-height: 30px !important;
+      object-fit: contain;
     }
-    /* Hide the "Powered by Upptime" line */
-    footer p:nth-child(2) { 
-      display: none !important; 
+    /* Fix for SVG Favicon transparency/display issues */
+    link[rel="icon"] {
+      content: url("https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kloudbucket-favicon.svg");
     }
-    /* Custom Blue Color for Links */
-    .footer a { 
-      color: #1da1f2 !important; 
-    }
+    /* Hide Upptime Branding */
+    footer p:nth-child(2) { display: none !important; }
+    .footer a { color: #1da1f2 !important; }
   
   navbar:
     - title: Status
       href: /
     - title: Main Site
       href: https://kloudbucket.com
-    - title: GitHub
-      href: https://github.com/KodeHomeCom/kloudbucketstatus
 
 # Combined Automated settings (Single i18n block to avoid errors)
 i18n:
