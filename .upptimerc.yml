@@ -18,8 +18,8 @@ status-website:
   
   # --- LOGO & FAVICON ---
   # Using the master branch link so it stays permanent
-  logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/KloudBucket%20400x60.png
-  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kloudbucket-favicon.svg
+  logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/kloudbucket-logo.png
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/22897aec4fc23322e21fab1ee3fb62910309be9d/assets/kb-favicon.svg
   
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
@@ -27,19 +27,6 @@ status-website:
   
   # --- ADVANCED CSS FIX ---
   customCSS: |
-    /* Force Logo Height */
-    .navbar-brand img, 
-    header img, 
-    a[href="/"] img {
-      height: 30px !important; 
-      width: auto !important;
-      max-height: 30px !important;
-      object-fit: contain;
-    }
-    /* Fix for SVG Favicon transparency/display issues */
-    link[rel="icon"] {
-      content: url("https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kloudbucket-favicon.svg");
-    }
     /* Hide Upptime Branding */
     footer p:nth-child(2) { display: none !important; }
     .footer a { color: #1da1f2 !important; }
