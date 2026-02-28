@@ -16,17 +16,22 @@ sites:
 status-website:
   cname: status.kloudbucket.com
   
-  # --- LOGO & FAVICON ---
-  # Using the master branch link so it stays permanent
-  logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/kloudbucket-logo.png
-  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/22897aec4fc23322e21fab1ee3fb62910309be9d/assets/kb-favicon.svg
+  # --- LOGO & FAVICON (Cleaned URLs) ---
+  logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kloudbucket-logo.png
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kb-favicon.svg
   
-  name: KloudBucket Status
+  name: Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
   
-  # --- ADVANCED CSS FIX ---
+  # --- LOGO SIZE & BRANDING FIX ---
   customCSS: |
+    /* This shrinks the logo height to match your website header */
+    .navbar-brand img, 
+    header img { 
+      height: 50px !important; 
+      width: auto !important; 
+    }
     /* Hide Upptime Branding */
     footer p:nth-child(2) { display: none !important; }
     .footer a { color: #1da1f2 !important; }
@@ -37,7 +42,7 @@ status-website:
     - title: Main Site
       href: https://kloudbucket.com
 
-# Combined Automated settings (Single i18n block to avoid errors)
+# Combined Automated settings
 i18n:
   activeIncidents: Active Incidents
   allSystemsOperational: "KloudBucket is running perfectly."
