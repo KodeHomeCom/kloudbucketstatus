@@ -1,7 +1,8 @@
 # Change these first
-owner: KodeHomeCom 
-repo: kloudbucketstatus 
+owner: KodeHomeCom # Your GitHub username
+repo: kloudbucketstatus # The name of this repository
 
+# Sites to monitor
 sites:
   - name: KloudBucket Main
     url: https://kloudbucket.com
@@ -13,17 +14,33 @@ sites:
     url: https://kloudbucket.com/user/dashboard
 
 status-website:
+  # Your custom domain
   cname: status.kloudbucket.com
-  logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/KloudBucket%20400x60.png
-  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/Favicon.png
+  
+  # Logo and Favicon (Using Raw Github Links)
+  logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/KloudBucket%20400x60.png
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/Favicon.png
+  
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
   
-  # --- NEW CUSTOM CSS TO REMOVE BRANDING ---
+  # --- BRANDING & LOGO SIZE CONTROL ---
   customCSS: |
-    footer p:nth-child(2) { display: none !important; } /* Hides Powered by Upptime */
-    .footer a { color: #1da1f2 !important; } /* Makes links KloudBucket Blue */
+    /* Adjust Logo Height to match your website */
+    header img { 
+      height: 45px !important; 
+      width: auto !important; 
+      max-width: 100%;
+    }
+    /* Hide the "Powered by Upptime" line */
+    footer p:nth-child(2) { 
+      display: none !important; 
+    }
+    /* Custom Blue Color for Links */
+    .footer a { 
+      color: #1da1f2 !important; 
+    }
   
   navbar:
     - title: Status
@@ -33,7 +50,7 @@ status-website:
     - title: GitHub
       href: https://github.com/KodeHomeCom/kloudbucketstatus
 
-# Combined Automated settings
+# Combined Automated settings (Single i18n block to avoid errors)
 i18n:
   activeIncidents: Active Incidents
   allSystemsOperational: "KloudBucket is running perfectly."
