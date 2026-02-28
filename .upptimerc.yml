@@ -17,7 +17,7 @@ status-website:
   cname: status.kloudbucket.com
   # Logo and Favicon
   logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/KloudBucket%20400x60.png
-  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/KloudBucket%20400x60.png
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/Favicon.png
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
