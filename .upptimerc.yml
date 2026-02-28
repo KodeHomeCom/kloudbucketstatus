@@ -19,7 +19,7 @@ status-website:
   
   # Logo and Favicon (Using Raw Github Links)
   logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/KloudBucket%20400x60.png
-  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/Favicon.png
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/e5919b225d8792ae4ddb1ffe1786f1f0348978fa/assets/kloudbucket-favicon.svg
   
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
