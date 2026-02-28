@@ -12,6 +12,12 @@ sites:
     url: https://kloudbucket.com/contact
   - name: User Dashboard
     url: https://kloudbucket.com/user/dashboard
+  - name: User Register
+    url: https://kloudbucket.com/register
+  - name: User Login
+    url: https://kloudbucket.com/login
+  - name: User Dashboard
+    url: https://kloudbucket.com/help
 
 status-website:
   cname: status.kloudbucket.com
