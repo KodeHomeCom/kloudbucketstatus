@@ -30,7 +30,7 @@ status-website:
     /* Adjust Logo Height to match your website */
     header img { 
       height: 45px !important; 
-      width: auto !important; 
+      width: 120px !important; 
       max-width: 100%;
     }
     /* Hide the "Powered by Upptime" line */
