@@ -1,6 +1,6 @@
 # Change these first
-owner: KodeHomeCom # Your GitHub username
-repo: kloudbucketstatus # The name of this repository
+owner: KodeHomeCom 
+repo: kloudbucketstatus 
 
 sites:
   - name: KloudBucket Main
@@ -13,14 +13,18 @@ sites:
     url: https://kloudbucket.com/user/dashboard
 
 status-website:
-  # Your custom domain
   cname: status.kloudbucket.com
-  # Logo and Favicon
   logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/KloudBucket%20400x60.png
   faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/Favicon.png
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
+  
+  # --- NEW CUSTOM CSS TO REMOVE BRANDING ---
+  customCSS: |
+    footer p:nth-child(2) { display: none !important; } /* Hides Powered by Upptime */
+    .footer a { color: #1da1f2 !important; } /* Makes links KloudBucket Blue */
+  
   navbar:
     - title: Status
       href: /
@@ -29,7 +33,7 @@ status-website:
     - title: GitHub
       href: https://github.com/KodeHomeCom/kloudbucketstatus
 
-# Combined Automated settings (One single i18n section)
+# Combined Automated settings
 i18n:
   activeIncidents: Active Incidents
   allSystemsOperational: "KloudBucket is running perfectly."
