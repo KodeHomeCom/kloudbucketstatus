@@ -16,31 +16,27 @@ sites:
 status-website:
   cname: status.kloudbucket.com
   
-  # --- LOGO & FAVICON (Cleaned URLs) ---
+  # --- LOGO & FAVICON ---
   logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kloudbucket-logo.png
-  faviconUrl: https://github.com/KodeHomeCom/kloudbucketstatus/blob/master/logo-192.png
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/master/assets/kb-favicon.svg
   
   name: Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
   
-  # --- LOGO SIZE & BRANDING FIX ---
-customCSS: |
-    /* Hides the default favicon from the browser's priority list */
-    link[href*="upptime-icon.svg"] {
-      display: none !important;
-    }
-    
-    /* Logo size control (keeping your previous request) */
+  # --- BRANDING & LOGO SIZE CONTROL ---
+  customCSS: |
+    /* Force Logo Height */
     .navbar-brand img, 
     header img { 
       height: 35px !important; 
       width: auto !important; 
     }
-    
-    /* Hide Branding Footer */
+    /* Hide Upptime Branding Footer */
     footer p:nth-child(2) { display: none !important; }
+    .footer a { color: #1da1f2 !important; }
   
+  # Navbar must be at the same indentation level as customCSS and cname
   navbar:
     - title: Status
       href: /
