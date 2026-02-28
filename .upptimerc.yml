@@ -15,8 +15,9 @@ sites:
 status-website:
   # Your custom domain
   cname: status.kloudbucket.com
-  # Logo URL - I'm using a placeholder, you can change this to your actual logo
+  # Logo and Favicon
   logoUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/KloudBucket%20400x60.png
+  faviconUrl: https://raw.githubusercontent.com/KodeHomeCom/kloudbucketstatus/refs/heads/master/assets/KloudBucket%20400x60.png
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
@@ -28,13 +29,9 @@ status-website:
     - title: GitHub
       href: https://github.com/KodeHomeCom/kloudbucketstatus
 
-# Automated settings for the status page
+# Combined Automated settings (One single i18n section)
 i18n:
   activeIncidents: Active Incidents
-  allSystemsOperational: All Systems Operational
+  allSystemsOperational: "KloudBucket is running perfectly."
   incidentReport: Incident Report
-
-i18n:
   footer: "© 2026 KloudBucket. All systems monitored by KodeHome Uptime Service."
-  # This customizes the main status banner text
-  allSystemsOperational: "KloudBucket is running perfectly."  
