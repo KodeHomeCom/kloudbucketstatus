@@ -10,7 +10,7 @@ sites:
   - name: KloudBucket Contact
     url: https://kloudbucket.com/contact
   - name: User Dashboard
-    url: https://kloudbucket.com/dashboard
+    url: https://kloudbucket.com/user/dashboard
 
 status-website:
   # Your custom domain
@@ -19,7 +19,7 @@ status-website:
   logoUrl: https://kloudbucket.com/assets/img/logo.png
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
-  introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by GitHub Actions and Upptime.
+  introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
   navbar:
     - title: Status
       href: /
