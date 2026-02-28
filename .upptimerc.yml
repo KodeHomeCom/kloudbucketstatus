@@ -16,7 +16,7 @@ status-website:
   # Your custom domain
   cname: status.kloudbucket.com
   # Logo URL - I'm using a placeholder, you can change this to your actual logo
-  logoUrl: https://kloudbucket.com/assets/img/logo.png
+  logoUrl: https://github.com/KodeHomeCom/kloudbucketstatus/blob/master/assets/KloudBucket%20400x60.png
   name: KloudBucket Status
   introTitle: "**KloudBucket** Real-Time Service Monitor"
   introMessage: This page monitors the uptime and performance of KloudBucket services. Powered by KodeHome Uptime Service.
